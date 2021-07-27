@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvano Artesanato - Letra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="calcheader">
+        <a href="index.html"><img src="Silvano.png" alt="silvanologo"></a>
+        <h1>Letra</h1>
+    </header>
+    <main class="calcmain">
+        <form id="letraform">
+            <label id="quantlabel">Palavra</label>
+            <input type="text" id="quant">
+
+            <label id="altlabel">Altura</label>
+            <input type="number" id="alt" min="1" placeholder=" em metros">    
+
+            <label id="espelabel">Espessura</label>
+            <div id="radioespe">
+                <input type="radio" name="espessura" value="3" checked>
+                <label>3</label><br>
+                <input type="radio" name="espessura" value="6">
+                <label>6</label><br>
+                <input type="radio" name="espessura" value="9">
+                <label>9</label><br>
+                <input type="radio" name="espessura" value="12">
+                <label>12</label><br>
+                <input type="radio" name="espessura" value="15">
+                <label>15</label>
+            </div>
+
+            <input type="button" value="Calcular" id="letrabtn" class="btn">
+        </form>
+
+        <div class="divres">
+            <p id="res">Preencha todas as entradas.</p>
+        </div>
+
+    </main>
+
+    <script src="js/letra.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+*{
+    margin: auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(216, 216, 216);
+    font-size: 20px;
+}
+#indexheader > img, .calcheader > a{
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+}
+.calcheader a > img{
+    width: 100%;
+}
+h1{
+    width: fit-content;
+    text-align: center;
+}
+#indexheader{  
+    max-width: 700px;
+}
+.indexnav{
+    background-color: rgb(184, 184, 184);
+    display: flex;
+    margin: 15px auto;
+    width: 100px;
+    border: 1px solid rgb(82, 82, 82);
+    text-decoration: none;
+    justify-content: center;
+    justify-items: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+.indexspan{
+    color: black;
+    text-align: center;
+}
+.calcheader{
+    max-width: 400px;
+}
+
+.calcmain form, .divres{
+    max-width: 300px;
+    background-color: rgb(184, 184, 184);
+    padding: 15px;
+    margin: 30px auto;
+    border-radius: 20px; 
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.363);
+    font-size: 18px;
+}
+form{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px 5px;
+    justify-content: center;
+    justify-items: center;
+}
+form > *{
+    width: 100%;
+    padding: 3px;
+    border-radius: 5px;
+    border: 0px;
+    outline: 0;
+}
+form > label::after{
+    content: ':';
+}
+#radioespe label::after{
+    content: ' mm';
+}
+.btn{
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 47, 47, 0.795);
+    border-radius: 10px;
+    cursor: pointer;
+    grid-area: btn;
+}
+.divres{
+    line-height: 40px;
+}
+
+
+
+
+#complabel{
+    grid-area: comp;
+}
+#larglabel{
+    grid-area: larg;
+}
+#altlabel{
+    grid-area: alt
+}
+#comp{
+    grid-area: compinput;
+}
+#larg{
+    grid-area: larginput;
+}
+#alt{
+    grid-area: altinput;
+}
+#espelabel{
+    grid-area: espe;
+}
+#fecholabel{
+    grid-area: fecho;
+}
+#radioespe{
+    grid-area: esperadio; 
+}
+#radiofecho{
+    grid-area: fechoradio;
+}
+#quantlabel{
+    grid-area: quant;
+}
+#quant{
+    grid-area: quantinput;
+}
+
+
+
+
+#placaform{
+    grid-template-areas: 'comp compinput'
+                        'larg larginput'
+                        'espe esperadio'
+                        'quant quantinput'
+                        'btn btn';
+}
+
+#recorteform{
+    grid-template-areas: 'comp compinput'
+                        'larg larginput'
+                        'espe esperadio'
+                        'quant quantinput'
+                        'btn btn';
+}
+
+#acrilicoform{
+    grid-template-areas: 'comp compinput'
+                        'larg larginput'
+                        'quant quantinput'
+                        'btn btn';
+}
+
+#letraform{
+    grid-template-areas: 'quant quantinput'
+                        'alt altinput'
+                        'espe esperadio'
+                        'btn btn';
+}
+
+#portaretratoform{
+    grid-template-areas: 'comp compinput'
+                        'larg larginput'
+                        'espe esperadio'
+                        'quant quantinput'
+                        'btn btn';
+}
+
+#caixadesapatoform{
+    grid-template-areas: 'comp compinput'
+                        'larg larginput'
+                        'alt altinput'
+                        'espe esperadio'
+                        'quant quantinput'
+                        'btn btn';
+}
+
+#caixacomdobradicaform{
+    grid-template-areas: 'comp compinput'
+                        'larg larginput'
+                        'alt altinput'
+                        'espe esperadio'
+                        'fecho fechoradio'
+                        'quant quantinput'
+                        'btn btn';
+}

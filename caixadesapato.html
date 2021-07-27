@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvano Artesanato - Caixa de Sapato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="calcheader">
+        <a href="index.html"><img src="Silvano.png" alt="silvanologo"></a>
+        <h1>Caixa de Sapato</h1>
+    </header>
+    <main class="calcmain">
+        <form id="caixadesapatoform">           
+            <label id="complabel">Comprimento</label>
+            <input type="number" id="comp" min="1" placeholder=" em metros">
+
+            <label id="larglabel">Largura</label>
+            <input type="number" id="larg"  min="1" placeholder=" em metros">     
+
+            <label id="altlabel">Altura</label>
+            <input type="number" id="alt"  min="1" placeholder=" em metros">     
+
+            <label id="espelabel">Espessura</label>
+            <div id="radioespe">
+                <input type="radio" name="espessura" value="3" checked>
+                <label>3</label><br>
+                <input type="radio" name="espessura" value="6">
+                <label>6</label><br>
+                <input type="radio" name="espessura" value="9">
+                <label>9</label><br>
+                <input type="radio" name="espessura" value="12">
+                <label>12</label><br>
+                <input type="radio" name="espessura" value="15">
+                <label>15</label>
+            </div>
+
+            <label id="quantlabel">Quantidade</label>
+            <input type="number" id="quant" value="1">
+
+            <input type="button" value="Calcular" id="caixadesapatobtn" class="btn">
+        </form>
+
+        <div class="divres">
+            <p id="res">Preencha todas as entradas.</p>
+        </div>
+
+    </main>
+
+    <script src="js/caixadesapato.js" type="module"></script>
+</body>
+</html>
